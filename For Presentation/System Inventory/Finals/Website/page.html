@@ -1,0 +1,176 @@
+<?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['email'])) {
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Home | Timpla</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Timpla</span> <span></span>Inventory</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="https://site168470.nicepage.io/?version=69ed0366-9160-47c5-9172-50b26045ff5e&uid=28a34b1b-18cd-4445-a79d-ee960ab3c35c" data-after="Inventory">Inventory</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="loginform.html" data-after="Log out">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello <?php echo $_SESSION['name'];?>, <span></span></h1>
+        <h1>Welcome to <span></span></h1>
+        <h1>Timpla Inventory!<span></span></h1>
+        <a href="https://site168470.nicepage.io/?version=69ed0366-9160-47c5-9172-50b26045ff5e&uid=28a34b1b-18cd-4445-a79d-ee960ab3c35c" type="button" class="cta">Inventory</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>Our Services</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>House paint</h2>
+          <p><br>We also paint houses both indoor and outdoor</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Deliveries</h2>
+          <p><br>In charge of taking care in packing and moving items and putting were the destination desires</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Lock smiths</h2>
+          <p></br>To replace locks, duplicate keys, and even break a lock, without damaging the doorway</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Plumbers</h2>
+          <p><br>To maintain water systems in houses and infastructures</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="img2.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>Us</span></h1>
+        <h2>We paint indoor and outdoor houses and delivering heavy equipments, Repairing houses and broken locks</h2>
+        <p>Timpla Paint Supply, Inc. was founded last May 2010. It is a member of the TAN GROUP OF COMPANIES., situated its affiliated outlets in Luzon, Bicol and Visayas Regions. This Company caters in the field of Paint Industry, Automobile and Truck Parts industry, and Motorcycle Parts Industry.
+          <br> At this present, Timpla Paint Supply, Inc. is one of the fastest growing paint centers of the group in Metro Manila-Luzon region located at 39 GSIS Avenue, Project 8 Quezon City, Philippines. It is a dealer that offers innovative and modern mixing equipment to suit the accurate colors that every consumer needs in very reasonable price. Also, it offers: 
+          <br> All kinds of Automotive Paints (Polyurethane 2k, Urethane 1k, Acrylic Paints)
+            All types of Household and Industrial Paints (Latex Paints, Elastomeric, Lacquer Based Paints)
+            All purpose enamel paints
+            All kinds of tinting colors and all kind of painting accessories
+            Hardware Supplies: Paint Brushes, Wax, Sand papers, etc
+            Waterproofing
+            </p>
+        <a href="https://www.facebook.com/timpla" class="cta">Help</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>0977 801 3294</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>timplapaintshoppeand<br>hardware@yahoo.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>39 GSIS Ave. Cor. Benefits Street, Project 8 Quezon City, Quezon City, Philippines</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="lowerbrand">
+        <h1><span>Paints</span> and <span>Hardware</span> Shop</h1>
+      </div>
+      <h2>Got a question in mind? Well, we might just have an answer for you! Here is a list of some Frequently Asked Questions to get us started. Can’t find your question in the list? Please send it to us by filling up our Contact Us form or sending us a message through our Facebook Page.</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/timpla"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="javs.js"></script>
+</body>
+
+</html>
+<?php
+}else{
+    header("Location: loginform.php");
+    exit();
+}
+?>

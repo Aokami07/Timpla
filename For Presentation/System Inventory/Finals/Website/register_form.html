@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Timpla Inv.</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="registerform_check.php" method="post">
+           <h3>Register Now!</h3>
+           <?php if (isset($_GET['error'])) { ?>
+                <p class="problem"><?php echo $_GET['error'] ?></p>
+      <?php } ?>
+
+      <!--<?php if (isset($_GET['name'])) { ?>
+         <input type="text" 
+                name="name" 
+                placeholder="Enter your name" 
+                value="<?php echo $_GET['name'] ?>"> -->
+      <?php } else { ?>
+        <input  type="text" 
+                name="name" 
+                placeholder="Enter your name">
+        <?php } ?>
+
+      <!--<?php if (isset($_GET['email'])) { ?>
+         <input type="text" 
+                name="email" 
+                placeholder="Enter your email" 
+                value="<?php echo $_GET['email'] ?>"> -->
+      <?php } else { ?>
+        <input  type="text" 
+                name="email" 
+                placeholder="Enter your email">
+        <?php } ?>
+
+        <input  type="password" 
+                name="password" 
+                placeholder="Enter your password">
+
+        <input type="password" 
+               name="cpassword"
+               placeholder="Confirm your password">
+
+        <input type="submit" 
+               name="submit" 
+               value="register now" 
+               class="form-btn">
+
+           <p>already have an account? <a href="loginform.html">login now</a></p>
+        </form>
+</body>
+</html>
